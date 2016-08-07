@@ -1,5 +1,6 @@
 " Configuration file for vim
 syntax on
+filetype plugin indent on
 set encoding=utf-8
 set nu!
 colorscheme Tomorrow-Night-Bright

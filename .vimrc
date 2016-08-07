@@ -16,4 +16,21 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
+" ---------
+" Pathogen
+" ---------
+
 execute pathogen#infect()
+
+" ---------
+" NERDTree config
+" ---------
+
+" map F2 to open&close NERDTree?
+map <F2> :NERDTreeToggle<CR>
+" open NERDTree automatically
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

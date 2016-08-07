@@ -1,5 +1,6 @@
 " Configuration file for vim
 syntax on
+set encoding=utf-8
 set nu!
 colorscheme Tomorrow-Night-Bright
 set modelines=0		" CVE-2007-2438

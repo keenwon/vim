@@ -5,7 +5,10 @@
 
 " 设置配色方案
 syntax on
-colorscheme Tomorrow-Night-Bright
+set background=dark
+"colorscheme solarized
+colorscheme molokai
+"colorscheme Tomorrow-Night-Bright
 
 " 让配置变更立即生效
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -26,7 +29,7 @@ set nu!
 set nocompatible
 
 " 开启modelines
-set modelines
+set modelines=0
 
 " ---------
 " Pathogen

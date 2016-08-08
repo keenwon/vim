@@ -4,7 +4,7 @@
 " ---------
 
 " 设置配色方案
-syntax on
+syntax enable
 set background=dark
 "colorscheme solarized
 colorscheme molokai
@@ -22,8 +22,20 @@ filetype plugin indent on
 " 设置编码格式
 set encoding=utf-8
 
-" 开启行号
-set nu!
+" 总是显示状态栏
+set laststatus=2
+
+" 显示光标当前位置
+set ruler
+
+" 开启行号显示
+set number
+
+" 高亮显示搜索结果
+set hlsearch
+
+" 禁止折行
+set nowrap
 
 " 关闭兼容模式
 set nocompatible

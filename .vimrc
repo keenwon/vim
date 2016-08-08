@@ -1,20 +1,32 @@
-" Configuration file for vim
+" ---------
+" 自定义配置
+" 参考：https://github.com/yangyangwithgnu/use_vim_as_ide
+" ---------
+
+" 设置配色方案
 syntax on
-filetype plugin indent on
-set encoding=utf-8
-set nu!
 colorscheme Tomorrow-Night-Bright
-set modelines=0		" CVE-2007-2438
 
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
+" 让配置变更立即生效
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup nobackup
+" 定义快捷键的前缀，即<Leader>
+let mapleader=";"
+
+" 开启文件类型侦测，并且根据侦测到的不同类型加载对应的插件
+filetype plugin indent on
+
+" 设置编码格式
+set encoding=utf-8
+
+" 开启行号
+set nu!
+
+" 关闭兼容模式
+set nocompatible
+
+" 开启modelines
+set modelines
 
 " ---------
 " Pathogen

@@ -76,17 +76,19 @@ execute pathogen#infect()
 map <Leader>fl :NERDTreeToggle<CR>
 " 自动打开
 autocmd vimenter * NERDTree
-" open a NERDTree automatically when vim starts up if no files were specified
+" vim启动时不指定文件，也自动打开NERDtree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" 关闭全部文件的时候自动关闭NERDtree
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " 显示隐藏文件
 let NERDTreeShowHidden=1
 " NERDTree 子窗口中不显示冗余帮助信息
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
+" 忽略文件
+let NERDTreeIgnore=['.git$[[dir]]', '.vscode$[[dir]]', '.idea$[[dir]]', '.DS_Store$[[file]]']
 
 " ---------
 " vim-devicons config

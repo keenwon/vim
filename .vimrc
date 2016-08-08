@@ -31,11 +31,30 @@ set ruler
 " 开启行号显示
 set number
 
+" 高亮显示当前行/列
+set cursorline
+" set cursorcolumn
+
 " 高亮显示搜索结果
 set hlsearch
 
 " 禁止折行
 set nowrap
+
+" 将制表符扩展为空格
+set expandtab
+
+" 设置编辑时制表符占用空格数
+set tabstop=2
+
+" 设置格式化时制表符占用空格数
+set shiftwidth=2
+
+" 基于缩进或语法进行代码折叠
+set foldmethod=syntax
+
+" 启动 vim 时关闭折叠代码
+set nofoldenable
 
 " 关闭兼容模式
 set nocompatible

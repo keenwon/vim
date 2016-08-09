@@ -104,10 +104,10 @@ let NERDTreeIgnore=['.git$[[dir]]', '.vscode$[[dir]]', '.idea$[[dir]]', '.DS_Sto
 " ---------
 
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
-let g:Webdevicons_conceal_nerdtree_brackets = 0
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+let g:airline_powerline_fonts=1
+let g:WebDevIconsUnicodeDecorateFolderNodes=1
+let g:WebDevIconsNerdTreeAfterGlyphPadding=''
+let g:WebDevIconsNerdTreeGitPluginForceVAlign=0
 
 " ---------
 " vim-airline config

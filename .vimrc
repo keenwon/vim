@@ -76,6 +76,8 @@ execute pathogen#infect()
 map <Leader>fl :NERDTreeToggle<CR>
 " 自动打开
 autocmd vimenter * NERDTree
+" t 打开新标签也时，保持tree状态
+autocmd BufWinEnter * NERDTreeMirror
 " vim启动时不指定文件，也自动打开NERDtree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

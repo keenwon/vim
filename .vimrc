@@ -50,6 +50,10 @@ set tabstop=2
 " 设置格式化时制表符占用空格数
 set shiftwidth=2
 
+" 显示空格
+set list
+set listchars=tab:▸⋅,space:⋅,trail:•
+
 " 设置退格键
 set backspace=2
 

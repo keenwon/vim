@@ -50,6 +50,9 @@ set tabstop=2
 " 设置格式化时制表符占用空格数
 set shiftwidth=2
 
+" 设置退格键
+set backspace=2
+
 " 基于缩进或语法进行代码折叠
 set foldmethod=syntax
 

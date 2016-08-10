@@ -11,7 +11,7 @@ colorscheme molokai
 "colorscheme Tomorrow-Night-Bright
 
 " 让配置变更立即生效
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
+autocmd BufWritePost .vimrc source $MYVIMRC
 
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"

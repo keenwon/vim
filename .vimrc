@@ -98,6 +98,8 @@ let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
 " 忽略文件
 let NERDTreeIgnore=['.git$[[dir]]', '.vscode$[[dir]]', '.idea$[[dir]]', '.DS_Store$[[file]]', '.swp$[[file]]']
+" 修改文件夹配置，目前是配合molokai主题使用，不同主题需要不同的配置
+hi link NERDTreeDir FoldColumn
 
 " ---------
 " vim-devicons config
@@ -119,3 +121,4 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+

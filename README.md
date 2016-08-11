@@ -12,7 +12,7 @@ my vim configure, vim version:
 cd ~
 mkdir .vim
 cd .vim
-git clone https://github.com/keenwon/vim.git .
+git clone https://github.com/keenwon/vim.git --recursive .
 ```
 
 ### Font Installation

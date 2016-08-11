@@ -74,6 +74,7 @@ set modelines=0
 " ---------
 
 execute pathogen#infect()
+Helptags
 
 " ---------
 " NERDTree config

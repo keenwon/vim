@@ -134,3 +134,10 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>j <Plug>AirlineSelectPrevTab
 nmap <leader>k <Plug>AirlineSelectNextTab
+
+" ---------
+" ctrlp.vim config
+" ---------
+
+" 显示隐藏文件
+let g:ctrlp_show_hidden=1

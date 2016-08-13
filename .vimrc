@@ -99,7 +99,7 @@ let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
 " 忽略文件
 let NERDTreeIgnore=['.git$[[dir]]', '.vscode$[[dir]]', '.idea$[[dir]]', '.DS_Store$[[file]]', '.swp$[[file]]']
-" 修改文件夹配置，目前是配合molokai主题使用，不同主题需要不同的配置
+" 修改文件夹配色，目前是配合molokai主题使用，不同主题需要不同的配置
 hi link NERDTreeDir FoldColumn
 
 " ---------

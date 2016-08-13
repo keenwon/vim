@@ -120,8 +120,6 @@ let g:WebDevIconsNerdTreeGitPluginForceVAlign=0
 let g:airline_powerline_fonts = 1
 " 开启tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2

@@ -30,3 +30,6 @@
 	path = bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
     ignore = dirty
+[submodule "bundle/vimcdoc"]
+	path = bundle/vimcdoc
+	url = https://github.com/keenwon/vimcdoc

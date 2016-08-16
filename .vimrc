@@ -114,7 +114,7 @@ autocmd vimenter * NERDTree
 " t 打开新标签也时，保持tree状态
 autocmd BufWinEnter * NERDTreeMirror
 " vim启动时不指定文件，也自动打开NERDtree
-autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " 关闭全部文件的时候自动关闭NERDtree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -144,12 +144,12 @@ let g:WebDevIconsNerdTreeGitPluginForceVAlign=0
 " ---------
 
 " 字体
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 " 开启tabline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_idx_mode=1
 " 禁用tab 全部显示成buffer
-let g:airline#extensions#tabline#show_tabs = 0
+let g:airline#extensions#tabline#show_tabs=0
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
@@ -168,3 +168,9 @@ nmap <leader>k <Plug>AirlineSelectNextTab
 
 " 显示隐藏文件
 let g:ctrlp_show_hidden=1
+
+" ---------
+" ag.vim config
+" ---------
+
+let g:ag_working_path_mode="r"

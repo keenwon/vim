@@ -153,6 +153,10 @@ nmap <leader>k <Plug>AirlineSelectNextTab
 
 " 显示隐藏文件
 let g:ctrlp_show_hidden=1
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<c-t>']
+    \ }
 
 " ---------
 " ag.vim config

@@ -96,7 +96,7 @@ Helptags
 map <Leader>fl :NERDTreeToggle<CR>
 " 自动打开
 autocmd vimenter * NERDTree
-" t 打开新标签也时，保持tree状态
+" t 打开新标签页时，保持tree状态
 autocmd BufWinEnter * NERDTreeMirror
 " vim启动时不指定文件，也自动打开NERDtree
 autocmd StdinReadPre * let s:std_in = 1
@@ -153,6 +153,9 @@ nmap <leader>k <Plug>AirlineSelectNextTab
 
 " 显示隐藏文件
 let g:ctrlp_show_hidden=1
+" 在匹配条目中包含当前文件
+let g:ctrlp_match_current_file=1
+" 自定义快捷键
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>', '<c-t>']

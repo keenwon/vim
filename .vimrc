@@ -163,3 +163,9 @@ let g:ctrlp_prompt_mappings = {
 " ---------
 
 let g:ag_working_path_mode="r"
+
+" ---------
+" vim-bbye config
+" ---------
+
+nmap <Leader>b :Bdelete<CR>

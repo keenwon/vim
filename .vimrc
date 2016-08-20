@@ -138,6 +138,8 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_idx_mode=1
 " 禁用tab 全部显示成buffer
 let g:airline#extensions#tabline#show_tabs=0
+" tabline忽略规则
+let g:airline#extensions#tabline#excludes=['NERD_tree_*']
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3

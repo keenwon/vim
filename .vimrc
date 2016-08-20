@@ -6,9 +6,12 @@
 " 设置配色方案
 syntax enable
 set background=dark
-"colorscheme solarized
-colorscheme molokai
+"colorscheme molokai
+"colorscheme dracula
+colorscheme evening
+"colorscheme Tomorrow-Night
 "colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Eighties
 
 " 让配置变更立即生效
 autocmd BufWritePost .vimrc source $MYVIMRC

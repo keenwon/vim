@@ -1,8 +1,3 @@
-" ---------
-" 自定义配置
-" 参考：https://github.com/yangyangwithgnu/use_vim_as_ide
-" ---------
-
 " 设置配色方案
 syntax enable
 set background=dark
@@ -140,8 +135,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#show_tabs=0
 " tabline忽略规则
 let g:airline#extensions#tabline#excludes=[
-    \ 'NERD_tree_*', 
-    \ '__Tag_List__'
+    \ 'NERD_tree_*'
 \ ]
 " 自定义快捷键
 nmap <leader>1 <Plug>AirlineSelectTab1

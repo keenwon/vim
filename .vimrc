@@ -98,12 +98,12 @@ Helptags
 " 打开&关闭 <Leader>fl
 map <Leader>fl :NERDTreeToggle<CR>
 " 自动打开
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 " t 打开新标签页时，保持tree状态
 autocmd BufWinEnter * NERDTreeMirror
 " vim启动时不指定文件，也自动打开NERDtree
-autocmd StdinReadPre * let s:std_in = 1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in = 1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " 关闭全部文件的时候自动关闭NERDtree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " 显示隐藏文件
@@ -162,7 +162,7 @@ let g:ctrlp_match_current_file=1
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>', '<c-t>']
-    \ }
+\ }
 
 " ---------
 " ag.vim config
@@ -175,3 +175,28 @@ let g:ag_working_path_mode="r"
 " ---------
 
 nmap <Leader>b :Bdelete<CR>
+
+" ---------
+" vim-startify config
+" ---------
+
+" 设置session保存的目录
+let g:startify_session_dir='~/.vim/session'
+" 定义界面显示顺序
+let g:startify_list_order=[
+    \ ['   My sessions:'],
+    \ 'sessions',
+    \ ['   My most recently used files in the current directory:'],
+    \ 'dir',
+    \ ['   My most recently used files'],
+    \ 'files',
+    \ ['   My bookmarks:'],
+    \ 'bookmarks',
+    \ ['   My commands:'],
+    \ 'commands',
+\ ]
+" 设置session保存前关闭NERDTree
+let g:startify_session_before_save = [
+    \ 'echo "Cleaning up before saving.."',
+    \ 'silent! NERDTreeClose'
+\ ]

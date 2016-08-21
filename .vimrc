@@ -232,3 +232,10 @@ let g:syntastic_ignore_files=[
 \ ]
 " 定义 js checkers
 let g:syntastic_javascript_checkers=['eslint']
+
+" ---------
+" nerdcommenter config
+" ---------
+
+" 强制加个空格
+let g:NERDSpaceDelims=1

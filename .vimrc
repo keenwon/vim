@@ -111,7 +111,13 @@ let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
 " 忽略文件
-let NERDTreeIgnore=['.git$[[dir]]', '.vscode$[[dir]]', '.idea$[[dir]]', '.DS_Store$[[file]]', '.swp$[[file]]']
+let NERDTreeIgnore=[
+    \ '.git$[[dir]]', 
+    \ '.vscode$[[dir]]', 
+    \ '.idea$[[dir]]', 
+    \ '.DS_Store$[[file]]', 
+    \ '.swp$[[file]]'
+\ ]
 " 修改文件夹配色，目前是配合molokai主题使用，不同主题需要不同的配置
 hi link NERDTreeDir FoldColumn
 
@@ -209,3 +215,20 @@ let g:startify_session_before_save = [
 " ---------
 
 nnoremap <Leader>t :TagbarToggle<CR>
+
+" ---------
+" syntastic config
+" ---------
+
+" 文件打开时检测
+let g:syntastic_check_on_open=1
+" 启用文件类型的全部checker
+let g:syntastic_aggregate_errors=1
+" error window自动打开，自动关闭
+let g:syntastic_auto_loc_list=1
+" 定义忽略
+let g:syntastic_ignore_files=[
+    \ 'node_modules'
+\ ]
+" 定义 js checkers
+let g:syntastic_javascript_checkers=['eslint']

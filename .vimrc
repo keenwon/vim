@@ -1,3 +1,6 @@
+" ---------------------------------------------------------------------
+"                                                                Custom
+
 " 设置配色方案
 syntax enable
 set background=dark
@@ -82,16 +85,14 @@ nmap Q <Nop>
 " 不做任何保存，直接退出vim
 nmap <Leader>Q :qa!<CR>
 
-" ---------
-" Pathogen
-" ---------
+" ---------------------------------------------------------------------
+"                                                              Pathogen
 
 execute pathogen#infect()
 Helptags
 
-" ---------
-" NERDTree config
-" ---------
+" ---------------------------------------------------------------------
+"                                                       NERDTree config
 
 " 打开&关闭 <Leader>f
 map <Leader>f :NERDTreeToggle<CR>
@@ -99,11 +100,6 @@ map <Leader>f :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 " t 打开新标签页时，保持tree状态
 autocmd BufWinEnter * NERDTreeMirror
-" vim启动时不指定文件，也自动打开NERDtree
-"autocmd StdinReadPre * let s:std_in = 1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" 关闭全部文件的时候自动关闭NERDtree
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " 显示隐藏文件
 let NERDTreeShowHidden=1
 " NERDTree 子窗口中不显示冗余帮助信息
@@ -121,9 +117,8 @@ let NERDTreeIgnore=[
 " 修改文件夹配色，目前是配合molokai主题使用，不同主题需要不同的配置
 hi link NERDTreeDir FoldColumn
 
-" ---------
-" vim-devicons config
-" ---------
+" ---------------------------------------------------------------------
+"                                                   vim-devicons config
 
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
 let g:airline_powerline_fonts=1
@@ -131,9 +126,8 @@ let g:WebDevIconsUnicodeDecorateFolderNodes=1
 let g:WebDevIconsNerdTreeAfterGlyphPadding=''
 let g:WebDevIconsNerdTreeGitPluginForceVAlign=0
 
-" ---------
-" vim-airline config
-" ---------
+" ---------------------------------------------------------------------
+"                                                    vim-airline config
 
 " 字体
 let g:airline_powerline_fonts=1
@@ -159,9 +153,8 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>j <Plug>AirlineSelectPrevTab
 nmap <leader>k <Plug>AirlineSelectNextTab
 
-" ---------
-" ctrlp.vim config
-" ---------
+" ---------------------------------------------------------------------
+"                                                      ctrlp.vim config
 
 " 显示隐藏文件
 let g:ctrlp_show_hidden=1
@@ -173,21 +166,18 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<c-t>']
 \ }
 
-" ---------
-" ag.vim config
-" ---------
+" ---------------------------------------------------------------------
+"                                                         ag.vim config
 
 let g:ag_working_path_mode="r"
 
-" ---------
-" vim-bbye config
-" ---------
+" ---------------------------------------------------------------------
+"                                                       vim-bbye config
 
 nmap <Leader>b :Bdelete<CR>
 
-" ---------
-" vim-startify config
-" ---------
+" ---------------------------------------------------------------------
+"                                                   vim-startify config
 
 " 设置session保存的目录
 let g:startify_session_dir='~/.vim/session'
@@ -210,15 +200,13 @@ let g:startify_session_before_save = [
     \ 'silent! NERDTreeClose'
 \ ]
 
-" ---------
-" tagbar config
-" ---------
+" ---------------------------------------------------------------------
+"                                                         tagbar config
 
 nnoremap <Leader>t :TagbarToggle<CR>
 
-" ---------
-" syntastic config
-" ---------
+" ---------------------------------------------------------------------
+"                                                      syntastic config
 
 " 文件打开时检测
 let g:syntastic_check_on_open=1
@@ -233,9 +221,8 @@ let g:syntastic_ignore_files=[
 " 定义 js checkers
 let g:syntastic_javascript_checkers=['eslint']
 
-" ---------
-" nerdcommenter config
-" ---------
+" ---------------------------------------------------------------------
+"                                                  nerdcommenter config
 
 " 强制加个空格
 let g:NERDSpaceDelims=1

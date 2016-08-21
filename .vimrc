@@ -200,3 +200,9 @@ let g:startify_session_before_save = [
     \ 'echo "Cleaning up before saving.."',
     \ 'silent! NERDTreeClose'
 \ ]
+
+" ---------
+" tagbar config
+" ---------
+
+nnoremap <Leader>t :TagbarToggle<CR>

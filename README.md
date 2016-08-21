@@ -9,10 +9,7 @@ my vim configure, vim version:
 ### Install
 
 ```shell
-cd ~
-mkdir .vim
-cd .vim
-git clone https://github.com/keenwon/vim.git --recursive .
+git clone https://github.com/keenwon/vim.git --recursive ~/.vim
 ```
 
 ### Font Installation

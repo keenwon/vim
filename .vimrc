@@ -90,8 +90,8 @@ Helptags
 " NERDTree config
 " ---------
 
-" 打开&关闭 <Leader>fl
-map <Leader>fl :NERDTreeToggle<CR>
+" 打开&关闭 <Leader>f
+map <Leader>f :NERDTreeToggle<CR>
 " 自动打开
 "autocmd vimenter * NERDTree
 " t 打开新标签页时，保持tree状态

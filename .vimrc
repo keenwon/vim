@@ -226,3 +226,9 @@ let g:syntastic_javascript_checkers=['eslint']
 
 " 强制加个空格
 let g:NERDSpaceDelims=1
+
+" ---------------------------------------------------------------------
+"                                                  YouCompleteMe config
+
+" 最小自动触发补全的字符大小设置为3
+let g:ycm_min_num_of_chars_for_completion=3

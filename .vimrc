@@ -76,6 +76,9 @@ nmap <Leader>w :w<CR>
 " 定义快捷键保存所有窗口内容并退出vim
 nmap <Leader>WQ :wa<CR>:q<CR>
 
+" 禁用 Ex mode
+nmap Q <Nop>
+
 " 不做任何保存，直接退出vim
 nmap <Leader>Q :qa!<CR>
 

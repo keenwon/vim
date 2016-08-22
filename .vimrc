@@ -115,7 +115,7 @@ let NERDTreeIgnore=[
     \ '.swp$[[file]]'
 \ ]
 " 修改文件夹配色，目前是配合molokai主题使用，不同主题需要不同的配置
-hi link NERDTreeDir FoldColumn
+"hi link NERDTreeDir FoldColumn
 
 " ---------------------------------------------------------------------
 "                                                   vim-devicons config

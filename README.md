@@ -10,6 +10,8 @@ my vim configure, vim version:
 
 ```shell
 git clone https://github.com/keenwon/vim.git --recursive ~/.vim
+ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/conf/.tern-project ~/.tern-project
 ```
 
 ### Font Installation

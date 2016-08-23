@@ -208,8 +208,6 @@ nnoremap <Leader>t :TagbarToggle<CR>
 " ---------------------------------------------------------------------
 "                                                      syntastic config
 
-" 文件打开时检测
-let g:syntastic_check_on_open=1
 " 启用文件类型的全部checker
 let g:syntastic_aggregate_errors=1
 " error window自动打开，自动关闭

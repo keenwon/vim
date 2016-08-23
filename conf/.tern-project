@@ -1,0 +1,17 @@
+{
+  "libs": [
+    "browser",
+    "jquery",
+    "ecmascript"
+  ],
+  "plugins": {
+    "common": {},
+    "complete_strings": {},
+    "doc_comment": {},
+    "es_modules": {},
+    "modules": {},
+    "node_resolve": {},
+    "node": {},
+    "webpack": {}
+  }
+}

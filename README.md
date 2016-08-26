@@ -5,6 +5,12 @@ my vim configure
 * vim version: 7.4
 * iterm2
 
+## Screenshots
+
+![](https://raw.githubusercontent.com/keenwon/vim/master/screenshots/img1.png)
+
+![](https://raw.githubusercontent.com/keenwon/vim/master/screenshots/img2.png)
+
 ## Usage
 
 ### Install

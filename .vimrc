@@ -233,3 +233,9 @@ let g:ycm_min_num_of_chars_for_completion=3
 " 关闭预览窗口
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt=0
+
+" ---------------------------------------------------------------------
+"                                                 vim-easymotion config
+
+" 跨窗口搜索
+nmap <Leader><Leader>f <Plug>(easymotion-overwin-f)

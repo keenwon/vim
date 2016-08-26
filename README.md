@@ -27,6 +27,8 @@ Read this: [https://github.com/ryanoasis/vim-devicons#quick-installation-tldr](h
 
 ## Plugins
 
+more infomation see the plugin's homepage or `:help`
+
 * YouCompleteMe
 * ag.vim
 * ctrlp.vim

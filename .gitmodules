@@ -66,3 +66,6 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
 	ignore = dirty
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion

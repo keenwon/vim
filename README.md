@@ -1,8 +1,9 @@
 # My vim
 
-my vim configure, vim version:
+my vim configure
 
-> VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Jul 14 2016 12:50:05)
+* vim version: 7.4
+* iterm2
 
 ## Usage
 
@@ -18,3 +19,24 @@ ln -s ~/.vim/conf/.tern-project ~/.tern-project
 
 Read this: [https://github.com/ryanoasis/vim-devicons#quick-installation-tldr](https://github.com/ryanoasis/vim-devicons#quick-installation-tldr)
 
+## Plugins
+
+* YouCompleteMe
+* ag.vim
+* ctrlp.vim
+* nerdcommenter
+* nerdtree
+* nerdtree-git-plugin
+* numbers.vim
+* syntastic
+* tagbar
+* tern_for_vim
+* vim-airline
+* vim-bbye
+* vim-devicons
+* vim-easymotion
+* vim-gitgutter
+* vim-multiple-cursors
+* vim-nerdtree-syntax-highlight
+* vim-startify
+* vimcdoc

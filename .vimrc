@@ -239,3 +239,17 @@ let g:ycm_add_preview_to_completeopt=0
 
 " 跨窗口搜索
 nmap <Leader><Leader>f <Plug>(easymotion-overwin-f)
+
+" ---------------------------------------------------------------------
+"                                                            GUI config
+
+if has('gui_running')
+    " 隐藏左侧滚动条
+    set guioptions-=L
+
+    " 隐藏右侧滚动条
+    set guioptions-=r
+
+    " 隐藏底部滚动条
+    set guioptions-=b
+endif

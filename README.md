@@ -25,6 +25,11 @@ ln -s ~/.vim/conf/.tern-project ~/.tern-project
 
 Read this: [https://github.com/ryanoasis/vim-devicons#quick-installation-tldr](https://github.com/ryanoasis/vim-devicons#quick-installation-tldr)
 
+### Docs
+
+* [vim commands](https://github.com/keenwon/vim/blob/master/manual/vim.md)
+* [plugin commands](https://github.com/keenwon/vim/blob/master/.vimrc#L94)
+
 ## Plugins
 
 more infomation see the plugin's homepage or `:help`

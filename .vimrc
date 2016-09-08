@@ -224,6 +224,8 @@ let g:syntastic_javascript_checkers=['eslint']
 
 " 强制加个空格
 let g:NERDSpaceDelims=1
+" 注释对齐
+let g:NERDDefaultAlign='left'
 
 " ---------------------------------------------------------------------
 "                                                  YouCompleteMe config

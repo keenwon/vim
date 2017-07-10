@@ -25,6 +25,8 @@ ln -s ~/.vim/conf/.tern-project ~/.tern-project
 
 Read this: [https://github.com/ryanoasis/vim-devicons#quick-installation-tldr](https://github.com/ryanoasis/vim-devicons#quick-installation-tldr)
 
+When installed, set your terminal emulator font.
+
 ### Docs
 
 * [vim commands](https://github.com/keenwon/vim/blob/master/manual/vim.md)
